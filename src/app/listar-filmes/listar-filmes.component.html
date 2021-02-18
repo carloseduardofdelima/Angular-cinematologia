@@ -1,0 +1,14 @@
+<h1>Filmes Populares</h1>
+<section class="populares">
+    <div class="film-card" *ngFor="let filme of filmes_populares">
+        <img [src]="image_URL + filme.poster_path" alt="">
+        <p>{{filme.title}}</p>
+    </div>
+</section>
+<h1>Séries Populares</h1>
+<section class="populares">
+    <div class="film-card" *ngFor="let filme of series_populares">
+        <img [src]="image_URL + filme.poster_path" alt="">
+        <p>{{filme.name}}</p>
+    </div>
+</section>

@@ -1,0 +1,61 @@
+/* Slider */
+.container-fluid {
+    padding: 0;
+}
+  
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 70vh; /*Vai simular 90% da tela*/
+}
+  
+  #mainSlider .carousel-caption {
+    top: 80%;
+}
+
+  .carousel-indicators .active {
+    background-color: #fff;
+}
+
+h1 {
+  margin: 20px 0px;
+}
+  
+  .main-btn {
+    background-color:  rgb(192, 34, 34);
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px; /*Arredondar a borda*/
+    border: 3px solid transparent;
+    transition: 5s;
+}
+  
+  .main-btn:hover {
+    text-decoration: none; /*none porque é um link*/
+    color: #FFF;
+    background-color: transparent;
+    border-color: rgb(192, 34, 34);
+}
+  
+  #about-site img {
+    object-fit: cover;
+}
+
+.card {
+  background: rgb(1, 20, 36);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+footer {
+    background-color: #353D41;
+    margin-top: 10vh;
+}
