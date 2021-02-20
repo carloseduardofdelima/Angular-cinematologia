@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<h1>Pesquise pelo seus filmes favoritos</h1>
+
+<section id="busca">
+    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar"
+        [(ngModel)]="busca">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="pesquisarFilme()">Pesquisar</button>
+</section>
+
+<section id="filmes">
+    <div class="film-card" *ngFor="let filme of filmes_buscados">
+        <img [src]="image_URL + filme.poster_path" alt="Sem imagem">
+        <p>{{filme.title}}</p>
+    </div>
+</section>

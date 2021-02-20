@@ -8,18 +8,22 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ListarFilmesComponent } from './listar-filmes/listar-filmes.component';
 import { FilmesService } from './filmes.service';
+import { FormsModule } from '@angular/forms';
+import { BuscarFilmesComponent } from './buscar-filmes/buscar-filmes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    ListarFilmesComponent
+    ListarFilmesComponent,
+    BuscarFilmesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   
   ],
   providers: [FilmesService],

@@ -1,0 +1,28 @@
+#busca {
+    display: flex;
+    margin: 50px 0px;
+}
+
+input {
+    width: 200px;
+}
+.film-card {
+    margin: 0px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.film-card img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.film-card:hover {
+    color: green;
+    opacity: 0.6;
+}
+
+#filmes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
