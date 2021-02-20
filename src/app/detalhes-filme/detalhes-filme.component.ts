@@ -8,9 +8,9 @@ import { FilmesService } from '../filmes.service';
   styleUrls: ['./detalhes-filme.component.css']
 })
 export class DetalhesFilmeComponent implements OnInit {
-  private ID = this.router.url.slice(10);
-  private filme = [];
-  private image_URL = "https://image.tmdb.org/t/p/original/";
+  ID = this.router.url.slice(10);
+  filme: any;
+  image_URL = "https://image.tmdb.org/t/p/original/";
   
 
   constructor(private film: FilmesService, private router: Router) {
@@ -18,7 +18,7 @@ export class DetalhesFilmeComponent implements OnInit {
 
   ngOnInit(): void {
     this.film.movieDetails(this.ID).subscribe(res => this.filme = res);
-    console.log(this.ID);
+    console.log(this.filme);
   }
 
 }
