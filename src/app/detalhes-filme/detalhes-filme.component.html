@@ -1,0 +1,19 @@
+<app-header></app-header>
+<section id="background">
+    <img id="background-image" [src]="image_URL + filme.backdrop_path" alt="">
+    <h1>{{filme.title}}</h1>
+    <div id='fade'></div>
+</section>
+<section id="detalhes">
+    <div>
+        <p>{{filme.overview}}</p>
+    </div>
+    <div>
+        <ul>
+            <li>lançamento: {{filme.release_date}}</li>
+            <li>Duração: {{filme.runtime}}min</li>
+            <li>Nota: {{filme.vote_average}}</li>
+        </ul>
+    </div>
+   
+</section>

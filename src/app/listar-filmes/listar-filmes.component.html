@@ -2,14 +2,18 @@
 <h1>Filmes Populares</h1>
 <section class="populares">
     <div class="film-card" *ngFor="let filme of filmes_populares">
-        <img [src]="image_URL + filme.poster_path" alt="">
+        <a [routerLink]='detalhes_URL + filme.id'>
+            <img [src]="image_URL + filme.poster_path" alt="">
+        </a>
         <p>{{filme.title}}</p>
     </div>
 </section>
-<h1>Séries Populares</h1>
+<h1>Nos Cinemas</h1>
 <section class="populares">
-    <div class="film-card" *ngFor="let filme of series_populares">
-        <img [src]="image_URL + filme.poster_path" alt="">
+    <div class="film-card" *ngFor="let filme of filmes_lancamento">
+        <a [routerLink]='detalhes_URL + filme.id'>
+            <img [src]="image_URL + filme.poster_path" alt="">
+        </a>
         <p>{{filme.name}}</p>
     </div>
 </section>

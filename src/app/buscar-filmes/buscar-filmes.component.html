@@ -10,7 +10,9 @@
 
 <section id="filmes">
     <div class="film-card" *ngFor="let filme of filmes_buscados">
-        <img [src]="image_URL + filme.poster_path" alt="Sem imagem">
+        <a [routerLink]='detalhes_URL + filme.id'>
+            <img [src]="image_URL + filme.poster_path" alt="Sem imagem">
+        </a>
         <p>{{filme.title}}</p>
     </div>
 </section>

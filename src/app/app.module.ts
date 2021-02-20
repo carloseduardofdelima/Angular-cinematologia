@@ -10,6 +10,7 @@ import { ListarFilmesComponent } from './listar-filmes/listar-filmes.component';
 import { FilmesService } from './filmes.service';
 import { FormsModule } from '@angular/forms';
 import { BuscarFilmesComponent } from './buscar-filmes/buscar-filmes.component';
+import { DetalhesFilmeComponent } from './detalhes-filme/detalhes-filme.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BuscarFilmesComponent } from './buscar-filmes/buscar-filmes.component';
     HomeComponent,
     HeaderComponent,
     ListarFilmesComponent,
-    BuscarFilmesComponent
+    BuscarFilmesComponent,
+    DetalhesFilmeComponent
   ],
   imports: [
     BrowserModule,

@@ -19,11 +19,19 @@ export class FilmesService {
 
   }
 
-  listPopularShows(): Observable<any> {
-    return this.http.get(`${this.URL}tv/popular?api_key=${this.API_Key}&language=pt-BR&page=1`);
+  listPlayingMovies(): Observable<any> {
+    return this.http.get(`${this.URL}movie/now_playing?api_key=${this.API_Key}&language=pt-BR&page=1`);
   }
 
   searchMovie(title): Observable<any> {
-    return this.http.get(`${this.URL}search/movie?api_key=${this.API_Key}&language=pt-BR&query=${title}&page=1&include_adult=false`)
+    return this.http.get(`${this.URL}search/movie?api_key=${this.API_Key}&language=pt-BR&query=${title}&page=1&include_adult=false`);
   }
+
+  movieDetails(id): Observable<any> {
+    return this.http.get(`${this.URL}movie/${id}?api_key=${this.API_Key}&language=pt-BR`);
+  }
+
+
+
+
 }

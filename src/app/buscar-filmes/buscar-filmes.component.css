@@ -1,6 +1,12 @@
+h1 {
+    text-align: center;
+    margin: 70px;
+}
+
 #busca {
     display: flex;
     margin: 50px 0px;
+    justify-content: center;
 }
 
 input {

@@ -7,6 +7,7 @@ import { FilmesService } from '../filmes.service';
   styleUrls: ['./buscar-filmes.component.css']
 })
 export class BuscarFilmesComponent implements OnInit {
+  detalhes_URL = '/detalhes/';
   filmes_buscados = [];
   busca: string;
 
