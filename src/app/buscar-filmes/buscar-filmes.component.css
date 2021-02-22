@@ -32,3 +32,15 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+@media(max-width: 600px) {
+    #filmes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #busca {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
