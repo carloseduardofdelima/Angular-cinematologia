@@ -17,7 +17,7 @@ header, .navbar {
     color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .navbar-brand {
     display: none;
   }

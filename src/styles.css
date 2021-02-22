@@ -12,10 +12,25 @@ body {
     .container {
       padding: 20px 0;
     }
+
+    h1, h3 {
+      text-align: center;
+    }
   
     p, li {
       font-size: 14px;
   }
+
+    .col-md-3 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .cards {
+      flex-direction: column;
+      justify-content: center;
+
+    }
 
     .card img {
       height: 200px;
