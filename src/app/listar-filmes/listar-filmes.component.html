@@ -6,6 +6,10 @@
             <img [src]="image_URL + filme.poster_path" alt="">
         </a>
         <p>{{filme.title}}</p>
+        <div class="rating">
+            <img src="../../assets/crown-2.svg" alt="">
+            <p>{{filme.vote_average}}</p>
+        </div>
     </div>
 </section>
 <h1>Nos Cinemas</h1>
@@ -14,6 +18,10 @@
         <a [routerLink]='detalhes_URL + filme.id'>
             <img [src]="image_URL + filme.poster_path" alt="">
         </a>
-        <p>{{filme.name}}</p>
+        <p>{{filme.title}}</p>
+        <div class="rating">
+            <img src="../../assets/crown-2.svg" alt="">
+            <p>{{filme.vote_average}}</p>
+        </div>
     </div>
 </section>

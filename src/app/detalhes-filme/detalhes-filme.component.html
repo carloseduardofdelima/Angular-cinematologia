@@ -1,19 +1,28 @@
 <app-header></app-header>
 <section id="background">
     <img id="background-image" [src]="image_URL + filme.backdrop_path" alt="background">
-    <h1>{{filme.title}}</h1>
+
+    <div class="movie-title">
+        <h1>{{filme.title}}</h1>
+        <p >{{filme.release_date}} - {{filme.runtime}}min</p>
+        <span *ngFor="let genre of filme.genres"> {{genre.name}}, </span>
+
+    </div>
     <div id='fade'></div>
 </section>
 <section id="detalhes">
     <div>
+        <h1>Sinopse</h1>
+        <strong>{{filme.tagline}}</strong>
         <p>{{filme.overview}}</p>
     </div>
     <div>
         <ul>
-            <li>lançamento: {{filme.release_date}}</li>
-            <li>Duração: {{filme.runtime}}min</li>
             <li>Nota: {{filme.vote_average}}</li>
         </ul>
+        <button id="fav-button" (click)="adicionarFavorito(filme.id)"><img src="../../assets/bookmark.svg" alt="bookmark"> Adicionar aos Favoritos</button>
+        <a routerLink="/"><img id="back-button" src="../../assets/arrow-left.svg" alt="arrow"></a>
+
     </div>
-   
+
 </section>

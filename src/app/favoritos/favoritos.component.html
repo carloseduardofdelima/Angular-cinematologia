@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<h1>Favoritos</h1>
+
+<section id="filmes">
+    <div class="film-card" *ngFor="let filme of filmes_favoritos">
+        <a [routerLink]='detalhes_URL + filme.id'>
+            <img [src]="image_URL + filme.poster_path" alt="Sem imagem">
+        </a>
+        <p>{{filme.title}}</p>
+        <div class="rating">
+            <img src="../../assets/crown-2.svg" alt="">
+            <p>{{filme.vote_average}}</p>
+        </div>
+    </div>
+</section>

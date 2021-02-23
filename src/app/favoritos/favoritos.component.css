@@ -1,20 +1,16 @@
 h1 {
     text-align: center;
-    margin: 70px;
+    margin: 50px;
 }
 
-#busca {
-    display: flex;
-    margin: 50px 0px;
-    justify-content: center;
+#filmes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-input {
-    width: 200px;
-}
 .film-card {
     position: relative;
-    padding: 20px;
+    padding: 10px;
     margin: 10px 20px;
     text-align: center;
     background: #09b87557;
@@ -32,28 +28,23 @@ input {
 }
 
 .film-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
     color: rgb(145, 255, 0);
 }
 
-#filmes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.rating {
+  width: 50px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background: rgba(0, 0, 0, 0.726);
+  border-radius: 10px;
 }
 
-.rating {
-    width: 50px;
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    background: rgba(0, 0, 0, 0.726);
-    border-radius: 10px;
-  }
-  
-  .rating img {
-    width: 20px;
-    height: 20px;
-  }
+.rating img {
+  width: 20px;
+  height: 20px;
+}
 
 @media(max-width: 600px) {
     #filmes {

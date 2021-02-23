@@ -13,9 +13,17 @@ h1 {
 
 
 .film-card {
-    margin: 0px 20px;
+    position: relative;
+    padding: 10px;
+    margin: 10px 20px;
     text-align: center;
-    display: inline-block;
+    background: #09b87557;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s linear;
 }
 
 .film-card img {
@@ -24,8 +32,22 @@ h1 {
 }
 
 .film-card:hover {
-    color: green;
-    opacity: 0.6;
+  transform: translateY(-10px);
+    color: rgb(145, 255, 0);
+}
+
+.rating {
+  width: 50px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background: rgba(0, 0, 0, 0.726);
+  border-radius: 10px;
+}
+
+.rating img {
+  width: 20px;
+  height: 20px;
 }
 
 /* width */

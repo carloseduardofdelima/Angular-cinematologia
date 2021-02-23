@@ -8,6 +8,7 @@ import { FilmesService } from '../filmes.service';
   styleUrls: ['./detalhes-filme.component.css']
 })
 export class DetalhesFilmeComponent implements OnInit {
+
   ID = this.router.url.slice(10);
   filme: any;
   image_URL = "https://image.tmdb.org/t/p/original/";
@@ -18,7 +19,29 @@ export class DetalhesFilmeComponent implements OnInit {
 
   ngOnInit(): void {
     this.film.movieDetails(this.ID).subscribe(res => this.filme = res);
-    console.log(this.filme);
+  }
+
+  adicionarFavorito(id) {
+    let favoritos = window.localStorage.getItem('filmes_favoritos');
+
+    if(favoritos === null) {
+      favoritos = `${id}`;
+      window.localStorage.setItem('filmes_favoritos', favoritos);
+      console.log(favoritos);
+      alert('O filme foi adicionado aos favoritos!');
+
+    }
+
+    else if (favoritos.includes(id) === false) {
+      favoritos = `${favoritos},${id}`;
+      window.localStorage.setItem('filmes_favoritos', favoritos);
+      console.log(favoritos);
+      alert('O filme foi adicionado aos favoritos!');
+    }
+
+    else if(favoritos.includes(id)) {
+      alert('Este filme já foi adicionado aos favoritos!');
+    }
   }
 
 }
