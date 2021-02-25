@@ -27,7 +27,6 @@ export class DetalhesFilmeComponent implements OnInit {
     if(favoritos === null) {
       favoritos = `${id}`;
       window.localStorage.setItem('filmes_favoritos', favoritos);
-      console.log(favoritos);
       alert('O filme foi adicionado aos favoritos!');
 
     }
@@ -35,7 +34,6 @@ export class DetalhesFilmeComponent implements OnInit {
     else if (favoritos.includes(id) === false) {
       favoritos = `${favoritos},${id}`;
       window.localStorage.setItem('filmes_favoritos', favoritos);
-      console.log(favoritos);
       alert('O filme foi adicionado aos favoritos!');
     }
 

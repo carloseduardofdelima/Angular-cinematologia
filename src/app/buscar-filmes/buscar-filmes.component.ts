@@ -18,7 +18,6 @@ export class BuscarFilmesComponent implements OnInit {
   }
   pesquisarFilme() {
     this.film.searchMovie(this.busca).subscribe(res => this.filmes_buscados = res.results);
-    console.log(this.filmes_buscados);
   }
 
 }

@@ -3,10 +3,10 @@ h1 {
     margin: 70px;
 }
 
-#busca {
+form {
     display: flex;
-    margin: 50px 0px;
     justify-content: center;
+    align-items: center;
 }
 
 input {

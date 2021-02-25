@@ -19,6 +19,12 @@ header, .navbar {
 
 @media (max-width: 500px) {
   .navbar-brand {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-brand {
     display: none;
   }
 }

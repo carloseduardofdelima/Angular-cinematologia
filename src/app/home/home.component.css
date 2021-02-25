@@ -2,7 +2,8 @@
 .container-fluid {
     padding: 0;
 }
-  
+
+
   #mainSlider .carousel-inner, #mainSlider .carousel-item {
     height: 70vh; /*Vai simular 90% da tela*/
 }
@@ -10,6 +11,10 @@
   #mainSlider .carousel-caption {
     top: 80%;
 }
+
+  #mainSlider img {
+    object-fit: fill;
+  }
 
   .carousel-indicators .active {
     background-color: #fff;
@@ -61,4 +66,16 @@ h1 {
 footer {
     background-color: #353D41;
     margin-top: 10vh;
+}
+
+@media(max-width: 700px) {
+  .d-block {
+    height: 60vh;
+  }
+
+  #mainSlider img {
+    object-fit: cover;
+
+  }
+    
 }

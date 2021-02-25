@@ -28,7 +28,6 @@ import { FavoritosComponent } from './favoritos/favoritos.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule
-  
   ],
   providers: [FilmesService],
   bootstrap: [AppComponent]

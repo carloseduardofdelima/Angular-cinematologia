@@ -2,11 +2,13 @@
 
 <h1>Pesquise pelo seus filmes favoritos</h1>
 
-<section id="busca">
-    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar"
-        [(ngModel)]="busca">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="pesquisarFilme()">Pesquisar</button>
-</section>
+<form #myForm="ngForm">
+    <div>
+        <input class="form-control mr-sm-2" name="busca" type="search" placeholder="Pesquisar" aria-label="Pesquisar" [(ngModel)]="busca" required>
+    </div>
+
+    <button [disabled]="!myForm.form.valid" class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="pesquisarFilme()">Pesquisar</button>
+</form>
 
 <section id="filmes">
     <div class="film-card" *ngFor="let filme of filmes_buscados">
