@@ -1,6 +1,6 @@
 # Cinematologia
 
-! [gif](https://github.com/carloseduardofdelima/Angular-cinematologia/blob/master/cinematologia.gif?raw=true)
+![gif](https://github.com/carloseduardofdelima/Angular-cinematologia/blob/master/cinematologia.gif?raw=true)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
